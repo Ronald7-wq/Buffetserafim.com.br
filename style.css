@@ -1,0 +1,335 @@
+/* =========================
+   RESET + BASE
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#1f1f1f;
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* =========================
+   VARIÁVEIS (LOOK PREMIUM)
+========================= */
+
+:root{
+    --primary:#ff3d6e;
+    --secondary:#111827;
+    --accent:#25D366;
+    --bg:#f9fafb;
+    --card:#ffffff;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   HEADER PREMIUM
+========================= */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:800;
+    color:var(--primary);
+    letter-spacing:1px;
+}
+
+/* BOTÃO PREMIUM */
+
+.btn{
+    background:var(--accent);
+    color:#fff;
+    padding:14px 26px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s ease;
+    box-shadow:0 10px 25px rgba(37,211,102,0.25);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(37,211,102,0.35);
+}
+
+/* =========================
+   HERO PREMIUM
+========================= */
+
+.hero{
+    height:100vh;
+    background:url("serafins.jpg") center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    text-align:center;
+}
+
+.hero .overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        180deg,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.75)
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+    color:#fff;
+    padding:20px;
+}
+
+/* TAG PREMIUM */
+
+.tag{
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    padding:10px 18px;
+    border-radius:50px;
+    font-size:14px;
+    margin-bottom:20px;
+    backdrop-filter:blur(10px);
+}
+
+/* TITULO */
+
+.hero h1{
+    font-size:3.8rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    opacity:0.9;
+    margin-bottom:30px;
+}
+
+/* BOTÃO GRANDE */
+
+.btn-big{
+    font-size:16px;
+    padding:16px 32px;
+}
+
+/* =========================
+   SEÇÃO SOBRE
+========================= */
+
+.sobre{
+    padding:100px 0;
+    text-align:center;
+    background:var(--bg);
+}
+
+.sobre h2{
+    font-size:2.8rem;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.sobre p{
+    max-width:750px;
+    margin:auto;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#555;
+}
+
+/* =========================
+   CARDS MENU PREMIUM
+========================= */
+
+.menu{
+    padding:100px 0;
+}
+
+.menu h2{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:60px;
+    color:var(--secondary);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD PREMIUM */
+
+.card{
+    background:var(--card);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:.4s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(0,0,0,0.12);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:18px 18px 8px;
+    font-size:1.3rem;
+}
+
+.card p{
+    padding:0 18px 20px;
+    color:#666;
+}
+
+/* =========================
+   NÚMEROS (SOCIAL PROOF)
+========================= */
+
+.numeros{
+    background:var(--primary);
+    color:#fff;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+}
+
+.numero{
+    padding:60px 20px;
+}
+
+.numero h3{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.cta{
+    padding:120px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#ff3d6e,#ff6b81);
+    color:white;
+}
+
+.cta h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.cta p{
+    margin-bottom:30px;
+    opacity:0.9;
+}
+
+/* =========================
+   FOOTER CLEAN
+========================= */
+
+footer{
+    background:#0f172a;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+/* =========================
+   WHATSAPP FLUTUANTE
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    background:var(--accent);
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:white;
+    text-decoration:none;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    animation:pulse 2s infinite;
+}
+
+/* PULSE SUAVE */
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+    100%{transform:scale(1);}
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .sobre h2,
+    .menu h2,
+    .cta h2{
+        font-size:2rem;
+    }
+}
+}
+}
